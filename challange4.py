@@ -1,7 +1,8 @@
-inventry = [("laptop" , 50000),("mouse",500),("keyboard",1500)]
-total_price = 0 
-for (itam_name , price )in inventry:
-    print(f"item :{itam_name}|price : {price}")
-    total_price += price
+students = [("alice" ,85), ("bob",62), ("charli",90),("david",45)]
+passed_students = []
+for (name ,marks)in students:
+    if marks >= 60:
+        passed_students.append(name)
 
-print(total_price)
+print(passed_students)
+print(len(passed_students))

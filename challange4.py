@@ -1,8 +1,5 @@
-students = [("alice" ,85), ("bob",62), ("charli",90),("david",45)]
-passed_students = []
-for (name ,marks)in students:
-    if marks >= 60:
-        passed_students.append(name)
-
-print(passed_students)
-print(len(passed_students))
+student_score = {"Alice":85 ,"Bob":62 , "charli":90 , "david":45}
+student_score["Eve"]=95
+student_score["Bob"]=70
+for name , score in student_score.items():
+    print(f"student :{name} | score : {score}")
